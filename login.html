@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <!-- Include Tailwind CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 h-screen flex items-center justify-center">
+
+    <div class="bg-white p-8 rounded shadow-md w-96">
+        <h2 class="text-2xl font-bold mb-6 text-center">Login</h2>
+        <form id="loginForm" class="space-y-4">
+            <div class="flex flex-col">
+                <label for="username" class="text-sm font-semibold text-gray-600">Username:</label>
+                <input type="text" id="username" name="username" class="border p-2 rounded mt-1">
+            </div>
+            <div class="flex flex-col">
+                <label for="password" class="text-sm font-semibold text-gray-600">Password:</label>
+                <input type="password" id="password" name="password" class="border p-2 rounded mt-1">
+            </div>
+            <button type="button" onclick="login()" class="bg-blue-500 text-white p-2 rounded">Login</button>
+            <br>
+           <a href="./register.html" > <p>New user register now!! </p></a>
+        </form>
+    </div>
+
+    <script>
+        function login() {
+            // Add your login logic here
+            alert("Login button clicked!");
+        }
+    </script>
+
+</body>
+</html>
